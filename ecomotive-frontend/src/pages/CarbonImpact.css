@@ -1,0 +1,184 @@
+.carbon-container {
+  padding: 40px;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.carbon-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+}
+
+.loading-spinner {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.carbon-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carbon-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #065f46;
+  margin: 0 0 10px 0;
+}
+
+.carbon-header p {
+  color: #047857;
+  font-size: 18px;
+  margin: 0;
+}
+
+.impact-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.summary-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.summary-card.primary {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+}
+
+.summary-card.primary .summary-value,
+.summary-card.primary .summary-label,
+.summary-card.primary .summary-subtext {
+  color: white;
+}
+
+.summary-icon {
+  font-size: 48px;
+}
+
+.summary-content {
+  flex: 1;
+}
+
+.summary-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 5px;
+}
+
+.summary-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.summary-subtext {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.charts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.chart-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.chart-card h3 {
+  margin: 0 0 20px 0;
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tips-section {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section h3 {
+  margin: 0 0 20px 0;
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tip-card {
+  padding: 20px;
+  background: #f0fdf4;
+  border-radius: 12px;
+  border: 2px solid #bbf7d0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+  border-color: #22c55e;
+  background: #dcfce7;
+}
+
+.tip-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.tip-card p {
+  margin: 0;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .carbon-container {
+    padding: 20px;
+  }
+  
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .impact-summary {
+    grid-template-columns: 1fr;
+  }
+}
