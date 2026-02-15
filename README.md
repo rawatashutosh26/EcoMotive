@@ -78,7 +78,7 @@ CREATE EXTENSION postgis;
 ```
 ## 2. Backend Setup
 ```bash
-git clone https://github.com/your-username/ecomotive.git  
+git clone https://github.com/rawatashutosh26/EcoMotive.git
 cd ecomotive  
 ./mvnw spring-boot:run  
 ```
